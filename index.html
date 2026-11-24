@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waldo Ha — Senior Mobile &amp; AI Engineer (React Native · Flutter · Swift · LLM / RAG)</title>
+  <meta name="description" content="Portfolio of Waldo Ha (waldobin), Senior Mobile &amp; AI Engineer with 15 years shipping iOS &amp; Android apps. Specializing in React Native, Flutter, Swift, LLM integration, and document RAG.">
+  <meta name="author" content="Waldo Ha">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Waldo Ha — Senior Mobile &amp; AI Engineer">
+  <meta property="og:description" content="15 years shipping iOS &amp; Android apps. React Native, Flutter, Swift, LLM / RAG chatbots, and production App Store releases.">
+  <meta property="og:image" content="assets/1-tinyai.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Waldo Ha — Senior Mobile &amp; AI Engineer">
+  <meta property="twitter:description" content="15 years shipping iOS &amp; Android apps. React Native, Flutter, Swift, LLM / RAG chatbots, and production App Store releases.">
+  <meta property="twitter:image" content="assets/1-tinyai.jpg">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Waldo Ha",
+    "alternateName": "waldobin",
+    "jobTitle": "Senior Mobile & AI Engineer",
+    "description": "Senior Mobile & AI Engineer with 15 years shipping iOS & Android apps since 2011. Expert in React Native, Flutter, Swift, LLM integration, and document RAG.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ho Chi Minh City",
+      "addressCountry": "Vietnam"
+    },
+    "sameAs": [
+      "https://github.com/waldobin",
+      "https://www.upwork.com/freelancers/~01c77ebfe20d20fd49"
+    ],
+    "knowsAbout": [
+      "Mobile App Development",
+      "iOS Development",
+      "Android Development",
+      "React Native",
+      "Flutter",
+      "Swift",
+      "SwiftUI",
+      "watchOS",
+      "LLM Integration",
+      "Retrieval-Augmented Generation (RAG)",
+      "NestJS",
+      "Next.js",
+      "PostgreSQL",
+      "pgvector",
+      "Docker"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Sticky Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Waldo Ha Home">
+        <span class="logo-name">Waldo Ha</span>
+        <span class="logo-handle">/ waldobin</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#clients" class="nav-link">Clients</a></li>
+          <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle light and dark color mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="menu-toggle" class="menu-toggle-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge" role="status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for remote freelance work · UTC+7 (overlaps EU mornings / US evenings)</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-name">Waldo Ha</span>
+            <span class="hero-headline">Senior Mobile &amp; AI Engineer</span>
+          </h1>
+
+          <p class="hero-tags" aria-label="Core Specializations">
+            <code>React Native</code> · <code>Flutter</code> · <code>Swift</code> · <code>LLM / RAG</code>
+          </p>
+
+          <p class="hero-value-prop">
+            I ship production mobile apps and add AI that actually works — chatbots, RAG over your documents, and App Store releases.
+          </p>
+
+          <p class="hero-subtext">
+            Based in Ho Chi Minh City, Vietnam. <strong>15 years shipping iOS &amp; Android apps</strong> since 2011 across FinTech, InsurTech, e-commerce, and media.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="https://www.upwork.com/freelancers/~01c77ebfe20d20fd49" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              Hire me on Upwork
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              See my work
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <!-- TODO: Add profile photo assets/avatar.jpg when available -->
+            <div class="avatar-wrapper">
+              <div class="avatar-placeholder" aria-label="Engineer profile badge">
+                <span class="avatar-monogram">WH</span>
+                <span class="avatar-tag">waldobin</span>
+              </div>
+            </div>
+            <div class="profile-quick-stats">
+              <div class="stat-item">
+                <span class="stat-number">15</span>
+                <span class="stat-label">Years Shipping Mobile (since 2011)</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">Production AI</span>
+                <span class="stat-label">RAG &amp; Local LLMs</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">End-to-End</span>
+                <span class="stat-label">Store Approval &amp; Cloud Infra</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Freelance Services</span>
+          <h2 class="section-title">How I Can Help Your Team</h2>
+          <p class="section-desc">Focused, high-impact engineering engagements tailored for startups and product companies.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+                <path d="M7 8h10"></path>
+                <path d="M7 12h6"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">AI Chatbot in Your React Native / Flutter App</h3>
+            <p class="service-card-text">
+              Integrate Gemini, OpenAI, or Claude into your existing cross-platform app. Includes token streaming, UI grounding in your business data, and a secure backend proxy that protects your API credentials.
+            </p>
+            <ul class="service-card-features">
+              <li>Low-latency response streaming</li>
+              <li>Context-aware agent workflows</li>
+              <li>Secure token &amp; backend proxy layer</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-card-title">RAG Chatbot Over Your PDFs &amp; Documents</h3>
+            <p class="service-card-text">
+              Full-stack Retrieval-Augmented Generation built with NestJS, Next.js, and PostgreSQL + pgvector. Connect cloud LLMs or self-hosted local models via Ollama to deliver factual, hallucination-resistant answers with citations.
+            </p>
+            <ul class="service-card-features">
+              <li>Chunking &amp; embedding ingestion pipelines</li>
+              <li>Verifiable answers with source citations</li>
+              <li>Cloud models or private local Ollama inference</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Fix &amp; Publish Your App to App Store / Google Play</h3>
+            <p class="service-card-text">
+              Rescue stuck releases and fix stubborn native compilation hurdles: resolve iOS code signing, CocoaPods conflicts, Android Gradle issues, privacy manifest rejections, and metadata compliance.
+            </p>
+            <ul class="service-card-features">
+              <li>Build error &amp; dependency conflict resolution</li>
+              <li>App Store &amp; Play Console rejection triage</li>
+              <li>Automated CI/CD release configuration</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Featured Work</span>
+          <h2 class="section-title">Production Systems &amp; Open Source</h2>
+          <p class="section-desc">Architected and shipped from zero to production.</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: TinyAI -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="assets/1-tinyai.jpg" alt="TinyAI multi-tenant RAG knowledge platform interface preview" loading="lazy" width="600" height="340">
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-role-badge">Solo Architect &amp; Full-Stack</span>
+              </div>
+              <h3 class="project-title">TinyAI</h3>
+              <p class="project-summary">Multi-tenant RAG knowledge platform engineered for high-accuracy document intelligence.</p>
+              <ul class="project-bullets">
+                <li>Designed a NestJS modular monolith with dedicated web and worker roles for resilient document processing.</li>
+                <li>Full-stack architecture with Next.js frontend, PostgreSQL + pgvector for vector search, and Redis job queues.</li>
+                <li>Integrated MinIO for S3-compatible document storage, supporting both cloud LLMs and private local Ollama instances.</li>
+                <li>Packaged for turnkey containerized orchestration via Docker Compose and production Kubernetes Helm charts.</li>
+              </ul>
+              <!-- TODO: Add live demo or video walkthrough link when ready -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">pgvector</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">MinIO</span>
+                <span class="tech-tag">Ollama</span>
+                <span class="tech-tag">Kubernetes / Helm</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: LocalizeX -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="assets/2-localizex.jpg" alt="LocalizeX Xcode AI localization extension interface preview" loading="lazy" width="600" height="340">
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-role-badge">Solo Creator &amp; Native macOS Engineer</span>
+              </div>
+              <h3 class="project-title">LocalizeX</h3>
+              <p class="project-summary">AI-powered localization companion for native Apple platform developers.</p>
+              <ul class="project-bullets">
+                <li>Built an Xcode Source Editor Extension paired with a lightweight macOS menu-bar companion application.</li>
+                <li>Seamlessly translates SwiftUI text strings directly into modern Xcode String Catalogs (<code>.xcstrings</code>).</li>
+                <li>Implements a bring-your-own-key model supporting Gemini, Claude, and OpenAI APIs with custom prompt controls.</li>
+                <li>Engineered clean IPC (Inter-Process Communication) to decouple AI execution and keep Xcode fast and uninterrupted.</li>
+              </ul>
+              <!-- TODO: Add App Store or GitHub release link when available -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Swift</span>
+                <span class="tech-tag">SwiftUI</span>
+                <span class="tech-tag">Xcode Extension</span>
+                <span class="tech-tag">macOS IPC</span>
+                <span class="tech-tag">String Catalogs</span>
+                <span class="tech-tag">Gemini</span>
+                <span class="tech-tag">Claude</span>
+                <span class="tech-tag">OpenAI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Lumibun -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="assets/3-lumibun.jpg" alt="Lumibun virtual pet and focus game on Apple Watch and iPhone" loading="lazy" width="600" height="340">
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-role-badge">Solo Developer &amp; Designer</span>
+              </div>
+              <h3 class="project-title">Lumibun</h3>
+              <p class="project-summary">Virtual pet &amp; focus game for Apple Watch and iPhone with procedural graphics and haptics.</p>
+              <ul class="project-bullets">
+                <li>Built a 60 FPS procedurally drawn character engine with Digital Crown interaction, petting physics, and haptics.</li>
+                <li>Integrated focus timer mechanics, custom procedural sound synthesis, and Apple HealthKit steps as currency.</li>
+                <li>Features 8 evolution stages, rich WidgetKit complications, iOS Home Screen widgets, and Dynamic Island live activities.</li>
+                <li>Engineered with zero advertisements and a strictly offline, privacy-first architecture.</li>
+              </ul>
+              <!-- TODO: Add App Store product link when available -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Swift</span>
+                <span class="tech-tag">SwiftUI</span>
+                <span class="tech-tag">watchOS</span>
+                <span class="tech-tag">WidgetKit</span>
+                <span class="tech-tag">HealthKit</span>
+                <span class="tech-tag">Dynamic Island</span>
+                <span class="tech-tag">CoreHaptics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Safe-AI -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="assets/5-safe-ai.jpg" alt="Safe-AI scam detection assistant preview" loading="lazy" width="600" height="340">
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-role-badge">Lead Developer &amp; Open Source</span>
+              </div>
+              <h3 class="project-title">Safe-AI</h3>
+              <p class="project-summary">Open-source scam detection assistant protecting Vietnamese users from social engineering &amp; deepfakes.</p>
+              <ul class="project-bullets">
+                <li>Detects complex fraud patterns including deepfake visual artifacts, cloned-voice scams, and phishing scripts.</li>
+                <li>Redacts sensitive personal information (PII) before analysis and operates under a zero-storage privacy model.</li>
+                <li>Uses local LLM inference via Ollama with strict rule-based heuristic fallbacks and defensive guardrails.</li>
+                <li>Structured as a NestJS backend API and Next.js frontend sharing end-to-end Zod validation schemas.</li>
+              </ul>
+              <!-- TODO: Add GitHub repository link when ready -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Ollama</span>
+                <span class="tech-tag">Local LLMs</span>
+                <span class="tech-tag">Zod</span>
+                <span class="tech-tag">Privacy Engineering</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: React Native Dev Tools -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="assets/6-rn-devtools.jpg" alt="React Native Dev Tools VS Code extensions preview" loading="lazy" width="600" height="340">
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-role-badge">Creator &amp; Maintainer</span>
+              </div>
+              <h3 class="project-title">React Native Dev Tools</h3>
+              <p class="project-summary">Open-source developer tooling suite for VS Code streamlining daily React Native and Expo engineering.</p>
+              <ul class="project-bullets">
+                <li><strong>RN Asset &amp; Icon Lens</strong>: Offline icon picker, instant image hover previews, gutter thumbnails, and duplicate-asset audit.</li>
+                <li><strong>Router Goto</strong>: Clickable typed navigation links for <code>navigation.navigate()</code> routes and Expo Router file paths.</li>
+                <li>Used by mobile developers to catch broken navigation paths and uncompressed duplicate assets during coding.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/waldobin/vscode-router-goto" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <span>vscode-router-goto</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://github.com/waldobin/rn-asset-len" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <span>rn-asset-len</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">VS Code API</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo Router</span>
+                <span class="tech-tag">AST Parsing</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Track Record</span>
+          <h2 class="section-title">15 Years Shipping Production Code</h2>
+          <p class="section-desc">Consistent history of leading mobile teams, improving performance, and deploying mission-critical systems.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">Ideal Life <span class="timeline-domain">(InsurTech)</span></h3>
+                  <span class="timeline-role">Application Consultant / Tech Lead</span>
+                </div>
+                <time class="timeline-date">Nov 2021 – Present</time>
+              </div>
+              <p class="timeline-desc">
+                React Native, Redux, Firebase, S3. Integrated payment gateways MoMo, Payoo, SmartPay, VPBank, and VNPT; integrated Voice Call &amp; Voice OTP with Tel4; led mobile team &amp; code reviews; designed shared Master UI framework; streamlined UAT, cutting bug resolution time by 20%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">Cross Cloud Partners</h3>
+                  <span class="timeline-role">Full-stack Developer</span>
+                </div>
+                <time class="timeline-date">Nov 2020 – Jun 2021</time>
+              </div>
+              <p class="timeline-desc">
+                React Native, Java, Stripe, Salesforce SOQL. Built Grand Royal Group app (+30% customer engagement) and customer loyalty card app; optimized SOQL query performance by +25%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">Construct Digital</h3>
+                  <span class="timeline-role">Mobile Developer</span>
+                </div>
+                <time class="timeline-date">Sep 2018 – Jun 2020</time>
+              </div>
+              <p class="timeline-desc">
+                Delivered enterprise mobile apps for Tupperware Brands (MY/PH), Lamitak, and Food Hero (Singapore); achieved 35% faster load times and 15% reduction in crashes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">SmartPro Center</h3>
+                  <span class="timeline-role">Mobile Development Tutor</span>
+                </div>
+                <time class="timeline-date">2018 – 2021</time>
+              </div>
+              <p class="timeline-desc">
+                Trained technical engineering staff at VNPT and VICEM Hà Tiên in iOS development, Angular, and Ionic mobile architectures.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">Reeting.com</h3>
+                  <span class="timeline-role">Senior iOS Engineer</span>
+                </div>
+                <time class="timeline-date">2016 – 2018</time>
+              </div>
+              <p class="timeline-desc">
+                Developed rental property listing search engine, custom fluid interactive animations, and led a comprehensive Clean Architecture refactor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">Freelance</h3>
+                  <span class="timeline-role">Full-stack / iOS &amp; Mobile Engineer</span>
+                </div>
+                <time class="timeline-date">2015 – 2021</time>
+              </div>
+              <p class="timeline-desc">
+                Built viral dance-video visual effects mobile app, IoT Raspberry Pi facial recognition prototype, and custom Stripe/Firebase e-commerce implementations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">LARION Computing</h3>
+                  <span class="timeline-role">Senior iOS Engineer</span>
+                </div>
+                <time class="timeline-date">2015</time>
+              </div>
+              <p class="timeline-desc">
+                Engineered real-time agent–customer collaboration features for real-estate platforms and mentored junior iOS developers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">FPT Software</h3>
+                  <span class="timeline-role">iOS Developer</span>
+                </div>
+                <time class="timeline-date">2013 – 2015</time>
+              </div>
+              <p class="timeline-desc">
+                Developed high-performance reusable Objective-C UI components and complex list/grid animations for enterprise clients.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-role-company">
+                  <h3 class="timeline-company">INFONAM</h3>
+                  <span class="timeline-role">Software Engineer</span>
+                </div>
+                <time class="timeline-date">2011 – 2013</time>
+              </div>
+              <p class="timeline-desc">
+                Delivered iPhone/iPad video playback and content search, alongside QA test automation scripts for Spirent's iTest network testing suite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Technical Capabilities</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-desc">Battle-tested tools used to engineer fast, resilient mobile apps and AI backends.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-category-indicator" aria-hidden="true"></span>
+              Mobile Engineering
+            </h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Swift</span>
+              <span class="skill-chip">SwiftUI</span>
+              <span class="skill-chip">Objective-C</span>
+              <span class="skill-chip">React Native</span>
+              <span class="skill-chip">Expo</span>
+              <span class="skill-chip">Flutter</span>
+              <span class="skill-chip">watchOS / WidgetKit</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-category-indicator" aria-hidden="true"></span>
+              AI &amp; LLM Integration
+            </h3>
+            <div class="skill-chips">
+              <span class="skill-chip">RAG Architectures</span>
+              <span class="skill-chip">LLM Integration</span>
+              <span class="skill-chip">Gemini</span>
+              <span class="skill-chip">OpenAI</span>
+              <span class="skill-chip">Claude</span>
+              <span class="skill-chip">Ollama (Local Models)</span>
+              <span class="skill-chip">PostgreSQL + pgvector</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-category-indicator" aria-hidden="true"></span>
+              Backend &amp; Web
+            </h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">NestJS</span>
+              <span class="skill-chip">Next.js</span>
+              <span class="skill-chip">Express</span>
+              <span class="skill-chip">PostgreSQL</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">Redis</span>
+              <span class="skill-chip">Firebase</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-category-indicator" aria-hidden="true"></span>
+              DevOps &amp; Cloud
+            </h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Docker</span>
+              <span class="skill-chip">Kubernetes / Helm</span>
+              <span class="skill-chip">AWS</span>
+              <span class="skill-chip">GCP</span>
+              <span class="skill-chip">CI/CD for App Stores</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-category-indicator" aria-hidden="true"></span>
+              Payments
+            </h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Stripe</span>
+              <span class="skill-chip">Braintree</span>
+              <span class="skill-chip">MoMo</span>
+              <span class="skill-chip">Payoo</span>
+              <span class="skill-chip">VNPAY-Style Gateways</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-category-indicator" aria-hidden="true"></span>
+              Core Languages
+            </h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Java</span>
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">Rust</span>
+              <span class="skill-chip">C++</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients & Brands Section -->
+    <section class="section clients-section" id="clients">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Enterprise &amp; Brand Reach</span>
+          <h2 class="section-title">Clients &amp; Brands Worked With</h2>
+          <p class="section-desc">Delivering solutions for global enterprises, telecom leaders, and high-growth products.</p>
+        </div>
+
+        <div class="brands-grid reveal">
+          <span class="brand-badge">Tupperware Brands</span>
+          <span class="brand-badge">Lamitak</span>
+          <span class="brand-badge">Grand Royal Group</span>
+          <span class="brand-badge">TELEVISA (Blue To Go VE)</span>
+          <span class="brand-badge">VNPT</span>
+          <span class="brand-badge">Ghana Single Window</span>
+          <span class="brand-badge">SHAREE Powerbank</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Foundation</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <div class="education-period">2009 – 2011</div>
+            <h3 class="education-institution">University of Science, HCMC</h3>
+            <p class="education-degree">Software Engineering</p>
+          </article>
+
+          <article class="education-card reveal">
+            <div class="education-period">2006 – 2009</div>
+            <h3 class="education-institution">Cao Thang Technical College</h3>
+            <p class="education-degree">Information Technology / Computer Engineering</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="contact-title">Let's build something.</h2>
+          <p class="contact-subtitle">
+            Need a senior mobile engineer to architect your app, ship to the app stores, or integrate generative AI &amp; RAG? Let's discuss your roadmap.
+          </p>
+
+          <div class="contact-ctas">
+            <a href="https://www.upwork.com/freelancers/~01c77ebfe20d20fd49" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+              Hire me on Upwork
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+
+            <a href="https://github.com/waldobin" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              GitHub
+            </a>
+
+            <!-- TODO: Add LinkedIn profile URL once available -->
+            <a href="#" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (Add profile URL)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <p class="contact-notice">
+            Available for remote contracts worldwide (UTC+7 · overlapping US Pacific/Eastern mornings and EU workdays).
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Waldo Ha (waldobin). Built with modern vanilla HTML, CSS, and JavaScript.
+      </p>
+      <div class="footer-links">
+        <a href="#hero" class="back-to-top">
+          Back to top
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
